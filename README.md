@@ -31,6 +31,13 @@ You will need the following tools:
 
 3. **Access the Application**: Once the application is running, you can access it via the appropriate port on your local machine or server. For example, if it's a web application running on Spring Boot's default port, you might access it at `http://localhost:8080`.
 
+## Notes
+It would be much easier to initialize this application if you just use IntellijIDEA (if you have one), you need to open project through IDEA and open gradle.build file and nothing else. 
+I finished this web application in two days, so I'm aware of many things that should be done the other way. API was not included due to many difficulties and changes it would require to be done in the project.
+
+I started building my project by setting up the model package (setting up DB at the same time). After that I started off with writing controllers -> service -> repositories -> html.
+I do it in this exact order everytime I write a web application, so there is no running through the code trying to figure out what you we're actually doing. There are problems with accessing the pages you're not supposed to, for example, you can easily drop entire application by doing localhost:8080/update-recipe/(any id) when you're in guest mode. This can be easily avoided by adding a security configuration file (Spring security), however implementing this feature would require more time then I have. Also, there are no pictures because for some reason they never display whatever I do, I surfed many websites and stackoverflow cases, I asked my programming school teachers and other students, nobody helped, even that one indian guy couldn't solve the problem... Also, HTML needs a lot of rework (renaming ids etc.). But overall, if you're not trying to break the app and just use buttons, it will work perfectly.
+
 ## Levels
 Lvl 1 - +
 Lvl 2 - +
