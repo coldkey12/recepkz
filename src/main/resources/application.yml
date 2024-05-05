@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=recepkzdb
+    username: postgres
+    password: 12070107Don
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
