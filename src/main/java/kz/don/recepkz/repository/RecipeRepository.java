@@ -14,4 +14,9 @@ public interface RecipeRepository extends JpaRepository<Recipe, Long> {
     @Query("SELECT r FROM Recipe r")
     List<Recipe> listAllRecipe();
 
+    @Query("SELECT r FROM Recipe r " +
+            "WHERE r.category ilike concat('%', :search, '%') " +
+            "OR r.description ilike concat('%', :search, '%') " +
+            "OR r.username ilike concat('%', :search, '%')")
+    List<Recipe> search(String search);
 }

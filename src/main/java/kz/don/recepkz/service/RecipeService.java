@@ -34,4 +34,8 @@ public class RecipeService {
     public void deleteRecipe(Long id) {
         recipeRepository.deleteById(id);
     }
+
+    public List<Recipe> search(String search) {
+        return recipeRepository.search(search);
+    }
 }

@@ -160,4 +160,11 @@ public class HomeController {
         }
         return "redirect:/home";
     }
+
+    @GetMapping("/recipe/search")
+    public String getRecipes(@RequestParam String search, Model model){
+        List<Recipe> recipeList = recipeService.search(search);
+        model.addAttribute("recipeList", recipeList);
+        return "home";
+    }
 }
