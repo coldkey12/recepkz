@@ -31,3 +31,7 @@ You will need the following tools:
 
 3. **Access the Application**: Once the application is running, you can access it via the appropriate port on your local machine or server. For example, if it's a web application running on Spring Boot's default port, you might access it at `http://localhost:8080`.
 
+## Levels
+Lvl 1 - +
+Lvl 2 - +
+Lvl 3 - (This project was made just in 2 days so I had little time to think of it.)
