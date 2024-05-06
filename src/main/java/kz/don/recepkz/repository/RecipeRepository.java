@@ -11,7 +11,7 @@ import java.util.List;
 public interface RecipeRepository extends JpaRepository<Recipe, Long> {
     Recipe findRecipeById(Long id);
 
-    @Query("SELECT r FROM Recipe r")
+    @Query("SELECT r FROM Recipe r ORDER BY r.postDate DESC")
     List<Recipe> listAllRecipe();
 
     @Query("SELECT r FROM Recipe r " +

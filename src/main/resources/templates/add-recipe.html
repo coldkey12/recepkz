@@ -17,10 +17,10 @@
 <body>
 <div>
     <ul class="nav nav-tabs">
-        <li class="nav-item">
+        <li class="nav-item" style="margin-top: auto">
             <a class="nav-link" href="home">Главная</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" style="margin-top: auto">
             <a class="nav-link active" aria-current="page">Добавить рецепт</a>
         </li>
         <li class="nav-item" style="margin-top: auto">
@@ -31,12 +31,12 @@
             </div>
         </li>
         <li class="nav-item" style="margin-left: auto; margin-top: auto">
-            <div class="nav-item">
+            <div class="nav-item" style="margin-top: 3vh;">
                 <div th:if="${currentUser != null}">
-                    <p>Здравствуйте, <span th:text="${currentUser.username}"></span>!</p>
+                    <p style="margin-right: 3vh">Здравствуйте, <span th:text="${currentUser.username}"></span>!</p>
                 </div>
                 <div th:unless="${currentUser != null}">
-                    <p>Гостевой режим</p>
+                    <p style="margin-right: 3vh">Гостевой режим</p>
                 </div>
             </div>
         </li>

@@ -9,9 +9,9 @@
 <div>
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page">Главная</a>
+            <a style="margin-top: 3vh" class="nav-link active" aria-current="page">Главная</a>
         </li>
-        <li class="nav-item" th:if="${currentUser!=null}">
+        <li class="nav-item" style="margin-top: auto" th:if="${currentUser!=null}">
             <a class="nav-link" href="/add-recipe-page">Добавить рецепт</a>
         </li>
         <li class="nav-item" style="margin-top: auto">
@@ -22,12 +22,12 @@
             </div>
         </li>
         <li class="nav-item" style="margin-left: auto; margin-top: auto;">
-            <div class="nav-item">
+            <div class="nav-item" style="margin-top: 3vh;">
                 <div th:if="${currentUser != null}">
-                    <p>Здравствуйте, <span th:text="${currentUser.username}"></span>!</p>
+                    <p style="margin-right: 3vh">Здравствуйте, <span th:text="${currentUser.username}"></span>!</p>
                 </div>
                 <div th:unless="${currentUser != null}">
-                    <p>Гостевой режим</p>
+                    <p style="margin-right: 3vh">Гостевой режим</p>
                 </div>
             </div>
         </li>
@@ -53,7 +53,7 @@
             <td th:text="${recipe.dishName}"></td>
             <td th:text="${recipe.category}"></td>
             <td th:text="${#temporals.format(recipe.postDate, 'dd-MM-yyyy HH:mm')}"></td>
-            <td><a class="btn btn-primary btn-sm" th:href="${'/recipe/'+recipe.id}">?</a></td>
+            <td style="display: flex; justify-content: center"><a class="nav-link" th:href="${'/recipe/'+recipe.id}">Детали</a></td>
         </tr>
         </tbody>
     </table>
