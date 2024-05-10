@@ -29,7 +29,7 @@ You will need the following tools:
 
 2. **Run the Application**: After building the project, you can run the application using `java -jar build/libs/recepkz-0.0.1-SNAPSHOT.jar`.
 
-3. **Access the Application**: Once the application is running, you can access it via the appropriate port on your local machine or server. For example, if it's a web application running on Spring Boot's default port, you might access it at `http://localhost:8080`.
+3. **Access the Application**: Once the application is running, you can access it via the appropriate port on your local machine or server. For example, if it's a web application running on Spring Boot's default port, you might access it at `http://localhost:8080/home`.
 
 ## Notes
 It would be much easier to initialize this application if you just use IntellijIDEA (if you have one), you need to open project through IDEA and open gradle.build file and nothing else. 
