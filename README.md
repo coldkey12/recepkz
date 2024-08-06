@@ -1,5 +1,5 @@
 # RECEPKZ
-This is a food recipe web application.
+This is a food recipe web application with the integration of OpenAI api.
 ## Instruments used: 
 Java JDK 20.0.1 -
 springframework.boot 3.2.5 -
